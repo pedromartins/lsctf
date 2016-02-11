@@ -1,0 +1,36 @@
+name:                lsctf
+version:             0.1.0.0
+-- synopsis:
+-- description:
+license:             MIT
+license-file:        LICENSE
+author:              Pedro Martins
+maintainer:          pedro.martins08@imperial.ac.uk
+-- copyright:
+category:            System
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable lsctf
+  main-is:             LSCTF.hs
+  other-modules:       Util
+  -- other-extensions:
+  build-depends:       base, directory>=1.2.5.0, filepath, ansi-terminal,
+                       pretty, optparse-applicative, split, regex-compat,
+                       regex-posix, safe
+
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+
+executable ctfpath
+  main-is:             CTFPATH.hs
+  other-modules:       Util
+  -- other-extensions:
+  build-depends:       base, directory>=1.2.5.0, filepath, ansi-terminal,
+                       pretty, optparse-applicative, split, regex-compat,
+                       regex-posix, safe
+
+  -- hs-source-dirs:
+  default-language:    Haskell2010
+
